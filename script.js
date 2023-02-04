@@ -1,5 +1,5 @@
 function getTotal() {
-    const billAmount = parseInt(document.getElementById('billAmount').value);
+    const billAmount = parseFloat(document.getElementById('billAmount').value);
 
     const tipPercent = document.getElementById('tipPercent').value;
 
