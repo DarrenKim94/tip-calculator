@@ -7,7 +7,7 @@ function getTotal() {
 
     const billTotal = tipAmount + billAmount;
     
-    document.getElementById('tipAmount').value = tipAmount
+    document.getElementById('tipAmount').value = tipAmount.toFixed(2)
 
     document.getElementById('billTotal').value = billTotal.toFixed(2);
     
