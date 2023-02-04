@@ -1,11 +1,15 @@
 function getTotal() {
-    let billAmount =document.getElementById('billAmount').value;
-    let tipPercent = document.getElementById('tipPercent').value;
-    let tipAmount = billAmount * (tipPercent / 100);
-    let billTotal = tipAmount + billAmount;
-    console.log(billTotal)
+    const billAmount = parseInt(document.getElementById('billAmount').value);
+
+    const tipPercent = document.getElementById('tipPercent').value;
+
+    const tipAmount = billAmount * (tipPercent / 100);
+
+    const billTotal = tipAmount + billAmount;
+    
     document.getElementById('tipAmount').value = tipAmount
-    document.getElementById('billAmount').value = billTotal
+
+    document.getElementById('billTotal').value = billTotal;
     
     return false
 }
