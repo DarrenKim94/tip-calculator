@@ -9,7 +9,7 @@ function getTotal() {
     
     document.getElementById('tipAmount').value = tipAmount
 
-    document.getElementById('billTotal').value = billTotal;
+    document.getElementById('billTotal').value = billTotal.toFixed(2);
     
     return false
 }
